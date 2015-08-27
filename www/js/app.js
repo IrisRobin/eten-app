@@ -29,8 +29,9 @@ angular.module('eten!', ['ionic'])
   $stateProvider
   .state('welkom', {
     url: '/welkom',
-    templateUrl: 'templates/welkom.html'
+    templateUrl: 'templates/welkom.html',
+    controller: 'LoginCtrl'
   });
 
   $urlRouterProvider.otherwise('/welkom');
-})
+});

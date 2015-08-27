@@ -1,16 +1,13 @@
-<ion-view>
-  <h1>Hoi</h1>
-  <form ng-controller="WelkomFormCtrl as ctrl" name="ctrl.form" ng-submit="ctrl.submit()">
-    <div class="list list-inset">
-      <label class="item item-input">
-        <input type="text" placeholder="First Name">
-      </label>
-      <label class="item item-input">
-        <input type="text" placeholder="Last Name">
-      </label>
-      <div class="item">
-        <button class="button button-positive button-block">submit</button>
+<ion-view view-title="Login" name="login-view">
+  <ion-content class="padding">
+      <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="Username" ng-model="data.username">
+          </label>
+          <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="data.password">
+          </label>
       </div>
-    </div>
-  </form>
+      <button class="button button-block button-calm" ng-click="login()">Login</button>
+  </ion-content>
 </ion-view>
